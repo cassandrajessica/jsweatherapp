@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Google Font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+<body>
+    <main class="container">
+        <!-----SEARCH HOME PAGE MARKUP------>
+        <div class="weather-app-container">
+            <header class="search-container">
+                <div class="search-bar-container">
+                    <input class="search-bar" type="text" placeholder="Enter a city">
+                </div>
+
+                <button class="search-btn">
+                    <img src="/assets/images/search.png" alt="search icon" class="search-icon">
+                </button>
+
+                <div class="location-container">
+                    <img src="/assets/images/location.png" alt="location icon" class="location-icon">
+                </div>
+
+                <div class="img-container">
+                    <img src="/assets/images/magnifyingglass.png" alt="magnifying glass icon" class="magnifying-icon">
+                </div>
+
+                <div class="home-title" >
+                    <h2>Begin your search</h2>
+                </div>
+
+                <div class="home-desc">
+                    <p>Use your location or enter a city to find out the current weather conditions.</p>
+                </div>
+
+                <div class="not-found"style='display: none;'>
+                    <h2>City not found</h2>
+                </div>
+            </header>
+            <!-----END SEARCH HOME PAGE MARKUP------>
+
+            <!-----CURRENT WEATHER INFO MARKUP------>
+            <section class="current-weather-info" style="display: none">
+                <div class="input-location-container">
+                    <img src="/assets/images/location2.png" alt="weather location icon" class="weather-location-icon">
+                </div>
+
+                <div class="greeting-container">
+                    <p>Hi, goodmorning.</p>
+                </div>
+
+                <div class="location-city-container">
+                    <h2 class="city-title">Dallas</h2>
+                </div>
+
+                <div class="temp-container">
+                    <h1 class="current-temp">46 °F</h1>
+                </div>
+
+                <div class="current-weather-icon-container">
+                    <img src="/assets/images/cloud.png" alt="cloud weather icon" class="current-weather-icon">
+                </div>
+
+                <div class="time-date-container">
+                    <p class="time">8:00 p.m | Dec 6</p>
+                </div>
+
+                <div class="weather-desc">
+                    <p class="current-weather-desc">cloudy</p>
+                </div>
+
+                <div class="humidity-container">
+                    <p class="humidity-title">Humidity</p>
+                    <p class="humidity-percent">60%</p>
+                </div>
+
+                <div class="humidity-icon">
+                    <img src="/assets/images/waterdrop.svg" alt="water drop icon">
+                </div>
+
+                <div class="wind-speed-container">
+                    <p class="wind-title">Wind Speed</p>
+                    <p class="wind-speed">2 M/S</p>
+                </div>
+
+                <div class="wind-icon">
+                    <img src="/assets/images/air.png">
+                </div>
+            </section>
+            <!-----END CURRENT WEATHER INFO MARKUP------>
+
+            <!------HOURLY WEATHER INFO MARKUP------->
+            <section class="hourly-weather-info-container"style="display: none">
+                <div class="forecast-item">
+                    <p class="hourly-time">1 pm</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="hourly-icon">
+                    <p class="hourly-temp">46 °F</p>
+                </div>
+
+                <div class="forecast-item">
+                    <p class="hourly-time">1 pm</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="hourly-icon">
+                    <p class="hourly-temp">46 °F</p>
+                </div>
+
+                <div class="forecast-item">
+                    <p class="hourly-time">1 pm</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="hourly-icon">
+                    <p class="hourly-temp">46 °F</p>
+                </div>
+
+                <div class="forecast-item">
+                    <p class="hourly-time">1 pm</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="hourly-icon">
+                    <p class="hourly-temp">46 °F</p>
+                </div>
+
+                <div class="forecast-item">
+                    <p class="hourly-time">1 pm</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="hourly-icon">
+                    <p class="hourly-temp">46 °F</p>
+                </div>
+
+                <div class="forecast-item">
+                    <p class="hourly-time">1 pm</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="hourly-icon">
+                    <p class="hourly-temp">46 °F</p>
+                </div>
+            </section>
+            <!------END HOURLY WEATHER INFO MARKUP------->
+
+            <!------FUTURE WEATHER CONDITIONS MARKUP------>
+            <section class="future-weather-container"style="display: none">
+                <div class="future-forecast-item">
+                    <p class="future-forecast-item-day">Mon</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="future-forecast-icon">
+                    <p class="future-temp">46 °F</p>
+                </div>
+
+                <div class="future-forecast-item">
+                    <p class="future-forecast-item-day">Mon</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="future-forecast-icon">
+                    <p class="future-temp">46 °F</p>
+                </div>
+
+                <div class="future-forecast-item">
+                    <p class="future-forecast-item-day">Mon</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="future-forecast-icon">
+                    <p class="future-temp">46 °F</p>
+                </div>
+
+                <div class="future-forecast-item">
+                    <p class="future-forecast-item-day">Mon</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="future-forecast-icon">
+                    <p class="future-temp">46 °F</p>
+                </div>
+
+                <div class="future-forecast-item">
+                    <p class="future-forecast-item-day">Mon</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="future-forecast-icon">
+                    <p class="future-temp">46 °F</p>
+                </div>
+
+                <div class="future-forecast-item">
+                    <p class="future-forecast-item-day">Mon</p>
+                    <img src="/assets/images/cloud.png" alt="forecast icon" class="future-forecast-icon">
+                    <p class="future-temp">46 °F</p>
+                </div>
+            </section>
+            <!------END FUTURE WEATHER CONDITIONS MARKUP------>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
